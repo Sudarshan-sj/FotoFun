@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import "./assets/css/style.css";
+import Images from "./components/Images";
+import {Card} from "react-bootstrap"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+    
+	return (
+	  <Card style={{width:"full", margin:"5px", padding:'10px', border:'2px solid black'}}>
+	    <section className="flex justify-center">
+	      
+	      <div>
+	        <div className="text-center">
+	         <div className="my-4"><h1>Foto Fun</h1></div>
+	          <Images />
+	         </div>
+	        </div>
+	    </section>
+      </Card>
+	);
 }
 
-export default App;
+export default App
